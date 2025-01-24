@@ -14,6 +14,14 @@ export const Header = () => {
         <Link to='o-mnie' smooth={true} duration={500} className='nav-item'>
           O mnie
         </Link>
+        <a
+          href='https://github.com/JStepnowski'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='nav-item'
+        >
+          Git
+        </a>
         <Link
           to='kontakt'
           smooth={true}
