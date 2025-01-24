@@ -2,10 +2,6 @@
 
 import {useEffect} from 'react';
 
-const handleClick = () => {
-  window.open('mailto:j.stepnowski97@gmail.com', '_blank');
-};
-
 export const ContactSection = () => {
   useEffect(() => {
     const button = document.getElementById('contact-button');
@@ -28,12 +24,9 @@ export const ContactSection = () => {
               </p>
             </div>
             <div>
-              <button
-                onClick={handleClick}
-                className='text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-950'
-              >
+              <div className='text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-950'>
                 <span className='font-semibold'>Skontaktuj się</span>
-              </button>
+              </div>
             </div>
           </div>
         </div>

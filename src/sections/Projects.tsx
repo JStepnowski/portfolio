@@ -26,9 +26,9 @@ const portfolioProjects = [
     year: '2018',
     title: 'Wartmilk',
     results: [
-      {title: 'Zaprojektowanie strony od zera'},
+      {title: 'Pomoc w projektowaniu UX/UI'},
       {title: 'Zaprojektowanie RWD'},
-      {title: 'Wymyślenie przyjaznego interfejsu'},
+      {title: 'Przygotowywanie assetów'},
     ],
     link: 'https://www.osmsieradz.pl',
     image: lightSaasLandingPage,
@@ -42,7 +42,7 @@ const portfolioProjects = [
       {title: 'Dopracowanie widoków RWD'},
       {title: 'Poszerzenie swojej wiedzy z zakresu typestript'},
     ],
-    link: '',
+    link: 'https://app.moremoda.at',
     image: aiStartupLandingPage,
   },
 ];
@@ -91,7 +91,12 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
+                  <a
+                    href={project.link}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-blue-500 hover:underline'
+                  >
                     <button className='bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8'>
                       <span>Zobacz</span>
                       <ArrowUpRightIcon className='size-4' />

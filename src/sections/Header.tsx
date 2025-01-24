@@ -26,7 +26,7 @@ export const Header = () => {
           to='kontakt'
           smooth={true}
           duration={500}
-          className='nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900'
+          className='nav-item bg-emerald-300 text-gray-900 hover:bg-emerald-300/70 hover:text-gray-900'
         >
           Kontakt
         </Link>
