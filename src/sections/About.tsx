@@ -96,16 +96,18 @@ export const AboutSection = () => {
     <div className='py-20 lg:py-28'>
       <div className='container'>
         <SectionHeader
-          eyebrow='About Me'
-          title='A glimpse Into My World'
-          description='Learn more about who I am, what I do, and what inspires me.'
+          eyebrow='O mnie'
+          title='Rzut oka na mój świat'
+          description='Dowiedz się więcej o tym, kim jestem, co robię i co mnie inspiruje.'
         />
         <div className='mt-20 flex flex-col gap-8'>
           <div className='grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3'>
             <Card className='h-[320px] md:col-span-2 lg:col-span-1'>
-              <CardHeader title='Moje CV' description='Pobierz moje CV' />
+              <CardHeader title='Moje CV' description='Pobierz moje CV klikając w obrazek' />
               <div className='w-30 mx-auto'>
-                <Image src={cvImage} alt='Moje CV' />
+                <a href='cv.pdf' download>
+                  <Image src={cvImage} alt='Moje CV' />
+                </a>
               </div>
             </Card>
             <Card className='h-[320px] md:col-span-3 lg:col-span-2'>

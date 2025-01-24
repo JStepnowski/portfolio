@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    appDir: true,
-    turbo: false, // 🚀 Wyłącza Turbopack
+    turbo: {}, // ✅ Turbo musi być obiektem, a nie `false`
   },
+
+  output: 'export', // ✅ Dodaj tę opcję dla statycznego eksportu
+  images: {
+    unoptimized: true, // ✅ Potrzebne dla statycznego eksportu Next.js
+  },
+
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) => rule.test?.test?.('.svg'));
