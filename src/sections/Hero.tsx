@@ -1,5 +1,8 @@
 'use client';
 
+// import {Link} from 'react-scroll';
+
+// import ArrowDown from '@/assets/icons/arrow-down.svg';
 import SparkleIcon from '@/assets/icons/sparkle.svg';
 import StarIcon from '@/assets/icons/star.svg';
 import grainImage from '@/assets/images/grain.jpg';
