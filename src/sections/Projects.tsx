@@ -40,7 +40,7 @@ const portfolioProjects = [
     results: [
       {title: 'Przetłumaczenie strony w 80%'},
       {title: 'Dopracowanie widoków RWD'},
-      {title: 'Poszerzenie swojej wiedzy z zakresu typestript'},
+      {title: 'Poszerzenie swojej wiedzy z zakresu TypeScript'},
     ],
     link: 'https://app.moremoda.at',
     image: aiStartupLandingPage,
